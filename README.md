@@ -30,4 +30,9 @@ Selain itu sistem ini juga mendukung **auto rename file menggunakan NIS (Nomor I
 ```bash
 git clone https://github.com/username/auto-pasfoto-generator.git
 cd auto-pasfoto-generator
+```
 
+## 2. Buat Virtual Environment
+Virtual environment menjaga library project agar tidak bentrok dengan sistem utama.
+
+Windows:
