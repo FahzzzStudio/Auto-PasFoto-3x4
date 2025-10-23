@@ -8,7 +8,7 @@ import io
 # =============== Konfigurasi ===============
 BACKGROUND_COLOR = (205, 18, 15)  # Merah #cd120f dalam RGB
 WIDTH_PX = int(3 * 300 / 2.54)   # 354 px
-HEIGHT_PX = int(4 * 300 / 2.54)  # 472 px
+HEIGHT_PX = int(4 * 300 / 2.54)  # 472 px3
 INPUT_FOLDER = "input"
 OUTPUT_FOLDER = "output"
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
@@ -22,7 +22,7 @@ def process_photo(image_path, output_path):
     img_cv = cv2.imread(image_path)
     gray = cv2.cvtColor(img_cv, cv2.COLOR_BGR2GRAY)
 
-    # 2. Deteksi wajah
+    # 2. Deteksi wajah  
     faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5)
     if len(faces) == 0:
         print(f"❌ Tidak ada wajah terdeteksi: {image_path}")
